@@ -1,0 +1,79 @@
+<DOCTYPE! html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="styles.css"/>
+      <title>Survery Form</title>
+    </head>
+    <body>
+      
+      <h1 id="title">Code.Hub Internship Challenge</h1>
+      <p id="description">A step towards your dream of becoming a software engineer.</p>
+      <form id="survey-form">
+      
+        <fieldset>
+          <label class="role">Who are you?</label>
+          <label  id="name-label" for="name">First Name<br> <input class="info" type="text" id="name" name="fname" placeholder="Enter your first name"  required/></label>
+          <label  for="l-name">Last Name <br><input class="info" type="text" id="l-name" name="lname" placeholder="optional" /></label>
+          <label  id="email-label" for="email">Email <br><input class="info" type="email" id="email" name="mail" placeholder="account@domain.com"  required/></label>
+          <label  id="number-label" for="number">Age<br><input class="info" type="number" id="number" min="13" max="120" name="age" placeholder="xx"  required/></label>
+          </fieldset>
+
+          <fieldset>
+            <label class="role">What are you doing?</label>
+            <label for="student"><input type="radio" id="student" value="1" name="dowhat" class="inline" checked/>Studying</label>
+            <label for="Working"><input type="radio" id="student" value="1" name="dowhat" class="inline" checked/>Working Professional</label>
+            <label for="other"><input type="radio" id="other" value="3" name="dowhat" class="inline"/>Other</label>
+          </fieldset>
+
+          <fieldset>
+            <label class="role">Do you have a resume?</label>
+            <label for="resume">Upload your resume:<input type="file" id="resume" name="resume" class="inline" required/></label>
+          </fieldset>
+
+          <fieldset>
+            <label for="qualification">Choose your highest qualification: 
+            <select id="dropdown" name="qualification" placeholder="Select one">
+              <option>10th</option>
+              <option>12th</option>
+              <option>Bachelor Degree</option>
+              <option>Master Degree</option>
+            </select>
+            <label for="proof">Upload Certificate: <input type="file" id="proof" name="certificate" required></label>
+          </fieldset>
+
+          <fieldset>
+            <label class="role">What role are you interested in?
+            </label>
+            <label for="role"><input type="checkbox" id="role" name="role" class="inline" value="1"checked>Software Developer Intern</label>
+            <label for="role"><input type="checkbox" id="role" name="role" value="2" class="inline">Frontend Developer Intern</label>
+            <label for="role"><input type="checkbox" id="role" name="role" value="3" class="inline">Backend Developer Intern</label>
+            <label for="role"><input type="checkbox" id="role" name="role" value="4" class="inline">Full Stack Developer Intern</label>
+            <label for="role"><input type="checkbox" id="role" name="role" value="5" class="inline">Quality Assurance(QA) Intern</label>
+            <label for="role"><input type="checkbox" id="role" name="role" value="6" class="inline">UI/UX Intern</label>
+            <label for="role"><input type="checkbox" id="role" name="role" value="7" class="inline">DevOps Intern</label>
+          </fieldset>
+
+          <fieldset>
+            <label class="role">Why should we choose you?</label>
+            <textarea id="bio" type="text" name="bio" placeholder="I worked for..." required></textarea>
+          </fieldset>
+
+          <fieldset>
+            <lable class="role">How did you learn about us?</label>
+            <select id="referral" name="news">
+              <option value="">Select one</option>
+              <option value="1">Social Media</option>
+              <option value="2">College/University</option>
+              <option value="3">Friends/Family</option>
+              <option value="4">Other</option>
+            </select>
+          </fieldset>
+
+          <label for="terms"><input class="inline" type="checkbox" value="necessary" id="terms" name="tc" required>I agree to the <a href="https://www.freecodecamp.org/news/terms-of-service/">Terms & Conditions</a>.</label>
+          
+          <input id="submit" type="submit" value="Submit" class="submit"/>
+
+          </form> 
+    </body>
+  </html>
